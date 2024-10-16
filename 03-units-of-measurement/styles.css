@@ -1,0 +1,46 @@
+#box {
+    background-color: red;
+    /* we can set the width and height of any
+    block level element */
+    width: 100vw;
+    height: 90vh; 
+    /* 1vh is 1% of the available viewport height
+    viewport = the area of the screen is visible
+    
+    90vh = 90% of the available viewport height
+    */
+}
+
+#box2 {
+    background-color: purple;
+    height:100%; /* 100% of the parent's height */
+    width:100%; /* 100% of the parent's width */
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 12px;
+}
+
+#box3 {
+    height: 50%;
+    width: 25%;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+}
+
+#box4 {
+    height: 0.5em; /* relative to the current font size; 1em = current font size */
+    background-color: orange;
+    width: 100px;
+}
+
+#box5 {
+    height: 3rem; /* relative the font-size set in the document root: <html> */
+    background-color: white;
+    width:100px;
+}
