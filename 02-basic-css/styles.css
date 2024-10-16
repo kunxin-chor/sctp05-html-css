@@ -1,0 +1,58 @@
+body {
+    background-color: azure;
+}
+
+#title {
+    font-family: Verdana;
+    font-size: 64px;
+    color: orange;
+}
+
+/* use class to style multiple elements */
+.recommended {
+ background-color: yellow;
+}
+
+/* 
+parent-child selector (aka descendant selector)
+In this case, only the <li> in <ul id="why-list"> will be styled
+It applies to grand children, great-grand children etc. etc.
+
+*/
+#why-visit li {
+    color: blue
+}
+
+/*
+The immediate descendnant is restricted to one level
+only */
+#reviews > p {
+    background-color: grey;
+}
+
+/* we can be more specific with classes */
+/* this means <p class="recommended"> */
+p.recommended {
+    background-color: orange;
+    font-size: 32px;
+}
+
+/* pseudo-classes 
+- predefined
+- they are automatically applied by the
+browser to the elements when a condition
+is met
+*/
+
+a:visited {
+    background-color: orange;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+.limited {
+    color: red;
+}
