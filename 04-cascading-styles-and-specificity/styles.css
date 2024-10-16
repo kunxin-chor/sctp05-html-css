@@ -1,0 +1,28 @@
+
+/* When an element is somehow
+selected more than one,
+the rules will merge (aka. cascade) */
+#content {
+    color: white;
+}
+
+#content {
+    background-color: red;
+}
+
+div {
+    font-family: Verdana;
+}
+
+.item {
+    background-color: purple;
+}
+
+#footer{
+    color: red;
+}
+
+#google {
+    color: green;
+}
+

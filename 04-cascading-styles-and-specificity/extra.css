@@ -1,0 +1,12 @@
+div {
+    font-size: 47px;
+    background-color: orange;
+}
+/* this will override the #footer in styles.css */
+#footer {
+    color: black;
+}
+
+a {
+    color: pink!important;
+}
