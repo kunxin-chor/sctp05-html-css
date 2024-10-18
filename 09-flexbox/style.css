@@ -1,0 +1,41 @@
+#container {
+    width: 500px;
+    height: 300px;
+    border:1px solid black;
+    /* this #container is a flexbox; the children elements inside it will be positioned using flexbox */
+    display: flex;  
+    flex-direction: row; /* default flex direction */
+    gap: 10px;
+    /* justify-content for the main axis */
+    justify-content: flex-start;
+    /* align items is for the cross axis */
+    align-items:center;
+}   
+
+#column-container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-top:20px;
+    gap: 10px;
+
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+     background-color: blue;
+}
+
+.green {
+    background-color: green;
+}

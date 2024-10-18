@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 5px;
+    color: white;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-item a:hover {
+    background-color: orange;
+    color: black;
+}
+
+#hero {
+    background-image: url(ramen.jpg);
+    width: 100vw;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+}
+
+#call-to-action {
+    position: absolute;
+    /* top/left - it's always relative to some other element */
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255,255,255,0.5);
+    /* it's always relative to the element itself */
+    transform: translate(-50%, -50%);
+}
+
+#chat {
+    background-image:url(https://www.seekpng.com/png/full/24-246191_download-talk-bubble-png-clipart-speech-balloon-black.png);
+    position: fixed;
+    bottom: 15%;
+    right: 5%;
+    background-size: cover;
+    height: 50px;
+    width: 150px;
+
+}

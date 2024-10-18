@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: flex;
+}
+
+#categories {
+  /* the minimum width that the element must have in the flex layout */
+  flex-basis: 300px;
+  /* flex-grow - once the minimum width is met, how much more space in the layout is going
+    to be allocated to it. Only make senses when there other elements in the flexbox
+    with their own flex-grow
+    */
+  flex-grow: 1;
+  background-color: azure;
+  flex-shrink: 0; /* disable it from shrinking */
+}
+
+#products {
+  flex-grow: 3;
+  flex-basis: 700px;
+  background-color:cornsilk;
+  display: flex;
+  flex-wrap: wrap; /* enable wrapping */
+  gap: 10px;
+}
+
+.product {
+  flex-basis: 150px;
+  
+}
+
+.product h1 {
+  font-size: 16px;
+}
+
+.product img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
