@@ -1,0 +1,66 @@
+/* 
+The box model includes:
+- width
+- height
+- border
+- margin
+- padding
+*/
+#box1 {
+    width: 100px;
+    background-color: orange;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px; /* in all directions */
+    
+    /* Without the using shorthand:
+        border-width: 1px;
+        border-style: solid;
+        border-color: black; 
+    */
+}
+
+#box2 {
+    margin-left: 50px;
+    margin-bottom: 15px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    background-color: green;
+    border: 1px solid black;
+}
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    /* if margin only have two numbers,
+    then it's  top and bottom, then left/right */
+    /* margin: 25px 50px; */
+
+    /* if three numbers: top, left/right, bottom
+    margin: 10px 20px 30px;
+    */
+
+    /* start from top, then go in clockwise direction */
+    margin: 10px 20px 30px 40px;
+
+}
+
+
+#box4 {
+    /* the padding will be part of the box
+    instead of being addd to it */
+    box-sizing:border-box;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 10px;
+}
+
+#box5 {
+    display: block;
+    width: 100px;
+    height:100px;
+    border: 1px solid black;
+}
