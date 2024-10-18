@@ -1,0 +1,27 @@
+
+body {
+    background-color: purple;
+}
+
+@media screen and (max-width: 200px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* from 200px to 300px */
+@media screen and (min-width:200px) and (max-width: 300px) {
+    body {
+        background-color: azure;
+    }
+}
+
+/* when the width is greater than 480px, then the style in { } */
+@media screen and (min-width: 480px ) {
+    body {
+        background-color: red;
+    }
+}
+
+
+

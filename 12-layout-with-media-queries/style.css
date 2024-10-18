@@ -1,0 +1,57 @@
+/* for devices with width < 480px */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+#categories {
+  background-color: #c8c8c8;
+  padding: 10px;
+}
+
+#products {
+  background-color: #B3B3B3;
+}
+
+.product {
+  padding: 10px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover
+}
+
+@media screen and (min-width: 480px) {
+  #main {
+    flex-direction: row;
+  }
+
+  #categories {
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 0;
+  }
+
+  #products {
+    flex-grow: 3;
+    flex-basis: 700px;
+    display: flex;
+    justify-content: flex-start; /* default is already flex-start, so not needed) */
+    flex-wrap: wrap;
+  }
+
+  .product {
+    flex-basis: 300px;
+  }
+
+  .product h1 {
+    font-size: 24px;
+  }
+}
