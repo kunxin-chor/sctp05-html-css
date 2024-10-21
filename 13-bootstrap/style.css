@@ -1,0 +1,13 @@
+main {
+    background-color:azure;
+}
+
+#banner {
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    min-height: 300px;
+}
